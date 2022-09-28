@@ -425,14 +425,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>In the sections below, we draw primary sampling units (PSUs) using probability proportional to size (PPS) sampling techniques implemented in the <em>Sample</em> class. The class <em>Sample</em> has two main methods that is <em>inclusion_probs</em> and <em>select</em>. The method <em>inclusion_probs()</em> computes the probability of selection and <em>select()</em> draws the random samples.</p>
+<p>In the sections below, we draw primary sampling units (PSUs) using probability proportional to size (PPS) sampling techniques implemented in the <em>Sample</em> class. The class <em>Sample</em> has two main methods: <em>inclusion_probs</em> and <em>select</em>. The method <em>inclusion_probs()</em> computes the probability of selection and <em>select()</em> draws the random samples.</p>
 <p>The following will illustrate the use of samplics for sample selection. For the illustration,</p>
 <ul>
 <li>We consider a stratified cluster design.</li>
 <li>We will a priori decide how many PSUs to sample from each stratum</li>
 <li>For the clusters selection, we demonstrate PPS methods</li>
 </ul>
-<p>This example is not meant to be exhaustif. There are many use cases that are not covered in this tutorial. For example, some PSUs may be segmented due to their size and segments selected in a subsequent step. Segment selection can be done with Samplics in a similar way as the PSUs selection, with PPS or SRS, after the segements have been created by the user.</p>
+<p>This example is not meant to be exhaustive. There are many use cases that are not covered in this tutorial. For example, some PSUs may be segmented due to their size and segments selected in a subsequent step. Segment selection can be done with Samplics in a similar way as the PSUs selection, with PPS or SRS, after the segements have been created by the user.</p>
 <p>First, let us import the python packages necessary to run the tutorial.</p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
